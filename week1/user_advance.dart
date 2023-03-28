@@ -39,3 +39,4 @@ void main() {
   const musteri2 = 50;
   print("halısaha kalan kapasite: " + "${haliSaha - (musteri1 - musteri2)}");
 }
+
