@@ -11,7 +11,7 @@ void main(List<String> args) {
   String name = '';
   //0,1,2
   List<int> moneys = [100, 110, 500, 200, 300];
-
+  moneys.sort();
   print("müşteri birin parası=${moneys[0]}");
   moneys.sort();
   moneys.add(15);
@@ -29,13 +29,23 @@ void main(List<String> args) {
   //35 tl'den büyük kredi verebilceğiz
   //küçük olanlar bye bye
 
-  List<int> customer = [100, 30, 40, 60];
+  List<int> customer = [100, 30, 40, 60, -5];
 
-  for (var element in customer) {
-    if (element < 35) {
-      print("krediye hak kazandınız");
+  for (var index = 0; index < 4; index += 1) {
+    if (customer[index] > 35) {
+      print("kredi hazır");
+    } else if (customer[index] > 0) {
+      print("kredi veremeyiz ama bir bakalım");
     } else {
-      print("bye bye");
+      print("bye");
     }
   }
+
+  // // for (var element in customer) {
+  // //   if (element < 35) {
+  // //     print("krediye hak kazandınız");
+  // //   } else {
+  // //     print("bye bye");
+  // //   }
+  // }
 }
