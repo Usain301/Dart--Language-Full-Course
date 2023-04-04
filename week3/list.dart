@@ -24,4 +24,18 @@ void main(List<String> args) {
     return index + 5;
   });
   print(customerMoney);
+
+  //100 30 40 60 customer
+  //35 tl'den büyük kredi verebilceğiz
+  //küçük olanlar bye bye
+
+  List<int> customer = [100, 30, 40, 60];
+
+  for (var element in customer) {
+    if (element < 35) {
+      print("krediye hak kazandınız");
+    } else {
+      print("bye bye");
+    }
+  }
 }
