@@ -31,7 +31,7 @@ void main(List<String> args) {
     for (var money in vbBank[item]!) {
       if (money > 150) {
         print(" hazır");
-        return;
+        return; //
       }
     }
   }
