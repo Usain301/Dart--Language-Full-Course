@@ -1,4 +1,5 @@
 void main(List<String> args) {
+  //
   //musteri adi var,parası var,yası var bla bla
 
   final int customerMoney = 50;
