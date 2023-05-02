@@ -5,4 +5,5 @@ class User {
   final int money;
 
   User(this.name, this.money);
+  //
 }
