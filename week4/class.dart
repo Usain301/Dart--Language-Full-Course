@@ -1,3 +1,5 @@
+import 'model/user_model.dart';
+
 void main(List<String> args) {
   //
   //musteri adi var,parası var,yası var bla bla
@@ -59,49 +61,23 @@ void controlCustomerAge(int value) {
   }
 
   print("------------------" * 10);
-  User user1 = User("hüseyin", 17, age: 24, city: "diyarbakır");
+  User user1 = User("hüseyin", 17, age: 24, city: "diyarbakır", id: '');
   // User user2 = User("hüseyin2", 18, null, null);
-  final user3 = User("ahmet", 30, age: 3);
+  final user3 = User("ahmet", 30, age: 3, id: '');
   print(user1.name);
+
+  print(user3.age);
 
   if (user3.city == null) {
     print("müşteri şehir bilgisi vermememiş");
     print(user3.userCode);
   }
-}
 
-//adi
-class User {
-  //özellikleri neler
-
-  late final String name;
-  late final int money;
-  late final int? age;
-  late final String? city;
-  late final String userCode;
-
-  late final String _id;
-//constructur
-  User(String name, int money, {required String id, int? age, String? city}) {
-    this.name = name;
-    this.money = money;
-    this.age = age;
-    this.city = city;
-    userCode = (city ?? "ist") + name;
-    _id = id;
-  }
-
-  //genel yöntem
-
-}
-
-class user2 {
-  late final String name;
-  late final int money;
-  late final int? age;
-  late final String? city;
-  late final String userCode;
-  user2(this.name, this.money, {this.age, this.city}) {
-    userCode = (city ?? "ist") + name;
+  if (user3.isSpecialUser('12')) {
+    user3.money += 5;
+    print("indirim yapıldı");
   }
 }
+
+
+  
