@@ -78,7 +78,7 @@ void controlCustomerAge(int value) {
     print("indirim yapıldı");
   }
 }
-//
+
 
 
   
