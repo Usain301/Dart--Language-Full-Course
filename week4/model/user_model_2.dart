@@ -8,3 +8,5 @@ class user2 {
     userCode = (city ?? "ist") + name;
   }
 }
+
+extension0
