@@ -9,4 +9,3 @@ class user2 {
   }
 }
 
-extension0
