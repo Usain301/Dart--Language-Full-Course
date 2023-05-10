@@ -35,9 +35,9 @@ class SpecialUser extends IUser {
 
   SpecialUser(String name, int money, this.bankingCode, int disccount)
       : super(name, money) {
-    _disccount = disccount; 
+    _disccount = disccount;
   }
-
+//
   //indirimli faiytın ne kadar
   int calculateNMoney() {
     return money - (money ~/ _disccount);
